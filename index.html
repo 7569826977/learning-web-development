@@ -1,28 +1,139 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>test title</title>
-  <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png">
+  <title>My watchlist</title>
+  <link rel="icon" type="image/gif" href="https://media.lordicon.com/icons/wired/outline/62-film.gif">
+  <style>
+    /* Sayfa ve içerik için temel stiller */
+    .poster {
+      width: 80%;
+      /* %100 yaparsan ekranı tamamen kaplar */
+      max-width: 500px;
+      /* istersen sabit maksimum genişlik koy */
+      height: auto;
+      margin: 10px auto;
+      display: block;
+      /* ortalamak için */
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      /* Daha modern bir görünüm için yazı tipi */
+    }
+
+    /* Ana kapsayıcı */
+    .container {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      /* Başlıklar gibi metin içeriklerini ortalar */
+    }
+
+    /* Resimleri ve videoları duyarlı hale getirme */
+    img,
+    iframe {
+      max-width: 100%;
+      /* Genişliğin %100'ü kadar olsun */
+      height: auto;
+      /* Yüksekliği otomatik ayarla (en-boy oranını koru) */
+      box-sizing: border-box;
+      /* Kenarlık ve dolguyu genişliğe dahil et */
+    }
+
+    /* Video oynatıcı (iframe) için özel stil */
+    iframe {
+      aspect-ratio: 16 / 9;
+      /* 16:9 video oranını koru */
+    }
+
+    /* Film listesi için stiller */
+    ol {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    /* Her bir film bölümü */
+    li>div {
+      margin-bottom: 40px;
+      /* Filmler arasına boşluk ekle */
+    }
+
+    /* Özet metni için stil */
+    pre {
+      text-align: center;
+      /* Özet metnini ortala */
+      white-space: pre-wrap;
+      /* Metnin alt satıra kaymasını sağla */
+      word-wrap: break-word;
+      /* Uzun kelimeleri kır */
+      padding: 0 15px;
+      /* Kenarlara biraz boşluk bırak */
+      font-size: 1em;
+    }
+  </style>
 </head>
 
 <body>
-  <form action="form.html" method="get">
-    <label for="username">Tomi</label>
-    <input type="radio" name ="username" id="username" value="tomi">
+  <div class="container">
 
-    
-    <br>
-    <label for="username2">Tim</label>
-    <input type="radio" name ="username2" id="username2" value="tim">
-    <br>
-
-    <input type="submit"value="send">
-    
-  </form>
-  
-
+    <ol>
+      <li>
+        <div>
+          <h1>Inception</h1>
+          <img class="poster"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPv9pdgORtRy81cWqafpO9qzjOebWNOI_-WBu1S5uNn-HazD9mQwPYius&s=10"
+            alt="Inception Poster">
+          <br>
+          <h2>Trailer</h2>
+          <iframe src="https://www.youtube.com/embed/YoHD9XEInc0" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <br>
+          <a style="color:yellow;" href="https://www.hdfilmcehennemi.nl/baslangic-hd-film-izle-8/" target="_blank">Click
+            to watch</a>
+          <h4>Synopsis</h4>
+          <pre>
+ A thief who steals corporate secrets
+ through the use of dream-sharing technology
+ is given the inverse task of planting an idea
+ into the mind of a C.E.O., but his tragic past
+ may doom the project and his team to disaster.
+</pre>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h1>Godfather</h1>
+          <img class="poster"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEoQlThFnc_iTiqeqkgcuma-zBJ2rYA0VOy0YjCppc7ls8uC11sGea_yLK&s=10"
+            alt="The Godfather Poster">
+          <br>
+          <h2>Trailer</h2>
+          <iframe src="https://www.youtube.com/embed/UaVTIH8mujA" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <br>
+          <a style="color:yellow;" href="https://www.hdfilmcehennemi.nl/hd-the-godfather-izle-9/" target="_blank">Click
+            to watch</a>
+          <h4>Synopsis</h4>
+          <pre>
+ The aging patriarch of an organized crime dynasty
+ transfers control of his clandestine empire
+ to his reluctant son.
+</pre>
+        </div>
+      </li>
+    </ol>
+  </div>
 </body>
 
 </html>
